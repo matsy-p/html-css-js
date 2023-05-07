@@ -12,9 +12,9 @@
 
 <body>
     <img src="img/header-body.png" alt="laptop-people">
-    <header>
-        <nav>
-            <div class="menu">
+    <header class="heared">
+        <nav class="header__menu">
+            <div class="header__menu-link">
                 <a href="#">Home</a>
                 <a href="#">Product</a>
                 <a href="#">Pricing</a>
@@ -22,7 +22,7 @@
                 <a href="#">Contact</a>
             </div>
             <img src="img/logo.svg" alt="figma-logo">
-            <div class="social-icon"> <!-- переробити під клікабельні іконки-->
+            <div class="header__social-icon"> <!-- переробити під клікабельні іконки-->
                 <img src="img/twitter.png" alt="twitter">
                 <img src="img/facebook.png" alt="facebook">
                 <img src="img/linkedin.png" alt="linkedin">
@@ -37,7 +37,7 @@
         </div>
         <button class="btn">Try for free</button>
     </header>
-    <main>
+    <main class="main">
         <section class="text">
             <h2>Features</h2>
             <h4>
@@ -45,8 +45,8 @@
                 Slate is designed for freelancers
             </h4>
         </section>
-        <section class="items">
-            <div class="item-one">
+        <section class="item">
+            <div class="item__drawing">
                 <img src="img/drawing.png" alt="drawing">
                 <h3>
                     OpenType features <br>
@@ -59,7 +59,7 @@
                     financial goal.
                 </p>
             </div>
-            <div class="item-two">
+            <div class="item__pencil">
                 <img src="img/pencil.png" alt="pencil">
                 <h3>Design with real data</h3>
                 <p>
@@ -69,7 +69,7 @@
                     financial goal.
                 </p>
             </div>
-            <div class="item-three">
+            <div class="item__brush">
                 <img src="img/brush.png" alt="brush">
                 <h3>Fastest way to<br>take action</h3>
                 <p>
@@ -90,8 +90,8 @@
         </section>
 
         <section class="organize">
-            <div class="content">
-                <div class="organize-one">
+            <div class="organize__content">
+                <div class="organize__content-fast">
                     <h2>Fastest way to<br>
                         organize
                     </h2>
@@ -102,10 +102,27 @@
                 </div>
                 <img src="img/laptop.png" alt="laptop">
             </div>
-
         </section>
+
+        <div class="proto">
+            <div class="proto__img">
+                <img src="img/proto_img.svg" alt="people-newsleter">
+            </div>
+            <div class="proto__text">
+                <h3>At your fingertips</h3>
+                <h2>Lightning fast prototyping</h2>
+            </div>
+            <div class="proto__form">
+                <h3>Subscribe to our Newsletter</h3>
+                <p>Available exclusivery on Figmaland</p>
+                <form action="" method="post" class="proto__form-action">
+                    <input type="email" name="email" id="proto__form-email" placeholder="email">
+                </form>
+            </div>
+        </div>
+        
     </main>
-    <footer>
+    <footer class="footer">
 
     </footer>
 </body>
