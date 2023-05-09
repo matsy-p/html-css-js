@@ -14,6 +14,7 @@ body {
 
 header {
     background-image: url(/img/background.png);
-    position: relative;
+    position: absolute;
+    display: flex;
     
 }
