@@ -1,6 +1,6 @@
-:root {
+/*:root {
 
-}
+}*/
 
 * {
     margin: 0;
@@ -8,9 +8,9 @@
     box-sizing: border-box;
 }
 
-body {
+/*body {
 
-}
+}*/
 header{
     display: block;
 }
@@ -26,10 +26,10 @@ header{
     align-items: center;
     padding: 0px;
 }
-.header__menu   {
+/*.header__menu   {
 
-}
+}*/
 
-.header__menu-link  {
-    
-}
+/*.header__menu-link  {
+
+}*/
