@@ -1,5 +1,17 @@
-.header{
-    align-items: center;
+.header {
     background: url(../img/background.png);
-    background-size: cover;
+
+}
+.header__menu-link {
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 500px) {
+    .header__menu {
+        display: flex;
+    }
+
+    .header__menu-link {
+        flex-direction: row;
+    }
 }
