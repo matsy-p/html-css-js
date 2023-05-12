@@ -2,112 +2,181 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Figma</title>
-    <link rel="shortcut icon" href="https://placekitten.com/96/139" type="image/x-icon">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Figma</title>
+  <link rel="shortcut icon" href="https://placekitten.com/96/139" type="image/x-icon">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-    <!-- розділити все на partials -->
-    <header data-include="partials/header.partial.html"></header>
-    <main class="main">
-        <section data-include="partials/features.partial.html"></section>
+  <!-- розділити все на partials -->
+  <header class="header">
+    <nav class="header__menu container">
+      <div class="header__menu-link">
+        <a href="#">Home</a>
+        <a href="#">Product</a>
+        <a href="#">Pricing</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="header__logo">
+        <img src="img/logo.svg" alt="figma-logo">
+      </div>
+      <div class="header__social-icon">
+        <img src="img/twitter.png" alt="twitter">
+        <img src="img/facebook.png" alt="facebook">
+        <img src="img/linkedin.png" alt="linkedin">
+      </div>
+    </nav>
+    <div class="hero">
+      <h1 class="hero__title">The best products <br> with Figma</h1>
+      <h4 class="hero__subtitle">
+        Most calendars are designed for teams. Slate is designed<br>
+        for freelancers
+      </h4>
+    </div>
+    <button class="btn">Try for free</button>
+  </header>
 
-        <div class="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/oP1fYvH9kfo"
-                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
-                    picture-in-picture; web-share" allowfullscreen>
-            </iframe>
+  <main class="main">
+    <section class="features">
+      <h2 class="features__title">Features</h2>
+      <h4 class="features__subtitle">
+        Most calendars are designed for teams.
+        Slate is designed for freelancers
+      </h4>
+      <div class="features__item">
+        <div class="item__drawing">
+          <img src="img/drawing.png" alt="drawing">
+          <h3 class="item__drawing-title">
+            OpenType features <br>
+            Variable fonts
+          </h3>
+          <p class="item__drawing-text">
+            Slate helps you see how
+            many more days you need
+            to work to reach your
+            financial goal.
+          </p>
         </div>
+        <div class="item__pencil">
+          <img src="img/pencil.png" alt="pencil">
+          <h3 class="item__pencil-title">Design with real data</h3>
+          <p class="item__pencil-text">
+            Slate helps you see how
+            many more days you need
+            to work to reach your
+            financial goal.
+          </p>
+        </div>
+        <div class="item__brush">
+          <img src="img/brush.png" alt="brush">
+          <h3 class="item__brush-title">Fastest way to take action</h3>
+          <p class="item__brush-text">
+            Slate helps you see how
+            many more days you need
+            to work to reach your
+            financial goal.
+          </p>
+        </div>
+      </div>
+    </section>
 
-        <section class="organize">
-            <div class="organize__content">
-                <div class="organize__content-fast">
-                    <h2 class="organize__content-fast-title">
-                        Fastest way to<br>
-                        organize
-                    </h2>
-                    <h4 class="organize__content-fast-subtitle">
-                        Most calendars are designed for teams.<br>
-                        Slate is designed for freelancers
-                    </h4>
-                    <button class="btn">Try for free</button>
-                </div>
-                <img src="img/laptop.png" alt="laptop">
-            </div>
-        </section>
+    <div class="video">
+      <iframe src="https://www.youtube.com/embed/oP1fYvH9kfo" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                    picture-in-picture; web-share" allowfullscreen>
+      </iframe>
+    </div>
 
-        <section class="proto">
-            <div class="proto__img">
-                <img src="img/proto_img.svg" alt="people-newsleter">
-            </div>
-            <div class="proto__text">
-                <h3 class="proto__text-subtitle">At your fingertips</h3>
-                <h2 class="proto__text-title">Lightning fast prototyping</h2>
-            </div>
-            <div class="proto__form">
-                <h3 class="proto__form-title">Subscribe to our Newsletter</h3>
-                <p class="proto__form-p">Available exclusivery on Figmaland</p>
-                <form action="" method="post" class="proto__form-action">
-                    <input type="email" name="email" id="proto__form-email" placeholder="email">
-                    <button type="submit">Subscribe</button>
-                </form>
-            </div>
-        </section>
-        <section class="partners">
-            <h2 class="partners__title">Partners</h2>
-            <h4 class="partners__subtitle">
-                Most calendars are designed for teams. 
-                Slate is designed for freelancers
-            </h4>
-            <div class="partners__items">
-              <div class="partners_items-g">
-                <h6 class="partners__items-title">Client Name</h6>
-                <img src="img/logo_google.svg" alt="google">
-              </div>
-              <div class="partners_items-a">
-                <h6 class="partners__items-title">Client Name</h6>
-                <img src="img/amazon.svg" alt="amazon">
-              </div>  
-              <div class="partners_items-m">
-                <h6 class="partners__items-title">Client Name</h6>
-                <img src="img/microsoft.svg" alt="microsoft">
-              </div>
-              <div class="partners_items-u">
-                <h6 class="partners__items-title">Client Name</h6>
-                <img src="img/uber.svg" alt="uber">
-              </div>
-              <div class="partners_items-d">
-                <h6 class="partners__items-title">Client Name</h6>
-                <img src="img/dropbox.svg" alt="dropbox">
-              </div>
-              <div class="partners_items-g">
-                <h6 class="partners__items-title">Client Name</h6>
-                <img src="img/logo_google.svg" alt="google">
-              </div>
-              <div class="partners_items-u">
-                <h6 class="partners__items-title">Client Name</h6>
-                <img src="img/uber.svg" alt="uber">
-              </div>
-              <div class="partners_items-a">
-                <h6 class="partners__items-title">Client Name</h6>
-                <img src="img/amazon.svg" alt="amazon">
-              </div>
-            </div>
+    <section class="organize">
+      <div class="organize__content">
+        <div class="organize__content-fast">
+          <h2 class="organize__content-fast-title">
+            Fastest way to<br>
+            organize
+          </h2>
+          <h4 class="organize__content-fast-subtitle">
+            Most calendars are designed for teams.<br>
+            Slate is designed for freelancers
+          </h4>
+          <button class="btn">Try for free</button>
+        </div>
+        <img src="img/laptop.png" alt="laptop">
+      </div>
+    </section>
 
-            <button class="btn">Try for free</button>
-            
-        </section>
-        
-    </main>
-    <footer class="footer"></footer>
-    <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
+    <section class="proto">
+      <div class="proto__img">
+        <img src="img/proto_img.svg" alt="people-newsleter">
+      </div>
+      <div class="proto__text">
+        <h3 class="proto__text-subtitle">At your fingertips</h3>
+        <h2 class="proto__text-title">Lightning fast prototyping</h2>
+      </div>
+      <div class="proto__form">
+        <h3 class="proto__form-title">Subscribe to our Newsletter</h3>
+        <p class="proto__form-p">Available exclusivery on Figmaland</p>
+        <form action="" method="post" class="proto__form-action">
+          <input type="email" name="email" id="proto__form-email" placeholder="email">
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+    <section class="partners">
+      <h2 class="partners__title">Partners</h2>
+      <h4 class="partners__subtitle">
+        Most calendars are designed for teams.
+        Slate is designed for freelancers
+      </h4>
+      <div class="partners__items">
+        <div class="partners_items-g">
+          <h6 class="partners__items-title">Client Name</h6>
+          <img src="img/logo_google.svg" alt="google">
+        </div>
+        <div class="partners_items-a">
+          <h6 class="partners__items-title">Client Name</h6>
+          <img src="img/amazon.svg" alt="amazon">
+        </div>
+        <div class="partners_items-m">
+          <h6 class="partners__items-title">Client Name</h6>
+          <img src="img/microsoft.svg" alt="microsoft">
+        </div>
+        <div class="partners_items-u">
+          <h6 class="partners__items-title">Client Name</h6>
+          <img src="img/uber.svg" alt="uber">
+        </div>
+        <div class="partners_items-d">
+          <h6 class="partners__items-title">Client Name</h6>
+          <img src="img/dropbox.svg" alt="dropbox">
+        </div>
+        <div class="partners_items-g">
+          <h6 class="partners__items-title">Client Name</h6>
+          <img src="img/logo_google.svg" alt="google">
+        </div>
+        <div class="partners_items-u">
+          <h6 class="partners__items-title">Client Name</h6>
+          <img src="img/uber.svg" alt="uber">
+        </div>
+        <div class="partners_items-a">
+          <h6 class="partners__items-title">Client Name</h6>
+          <img src="img/amazon.svg" alt="amazon">
+        </div>
+      </div>
+
+      <button class="btn">Try for free</button>
+
+    </section>
+
+  </main>
+  <footer class="footer"></footer>
+  <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
 </body>
 
 </html>
